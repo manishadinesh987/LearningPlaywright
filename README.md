@@ -1,13 +1,29 @@
 # Learning Playwright — PlaywrightFundamentals
 
-Small repository with Playwright examples and exercises used for learning Playwright.
+This repository is for learning Playwright and contains simple exercises and example scripts to practice end-to-end testing with Playwright.
 
-## Contents
-- `chapter_01_Basics/` — basic examples and setup verification
-- `chapter_02_js_concepts/` — JavaScript concept examples
+## Project Structure
+
+```
+PlaywrightFundamentals/
+├── README.md
+├── .gitignore
+├── chapter_01_Basics/
+│   ├── 01_basics.js
+│   ├── 02_verify_setup.js
+│   └── 03_hotCode.js
+├── chapter_02_js_concepts/
+└── (other examples)
+```
+
+## Purpose
+
+- Hands-on exercises for learning Playwright basics, test writing, and running tests.
+- Small, focused examples suitable for beginners.
 
 ## Prerequisites
-- Node.js (16+ recommended)
+
+- Node.js (14+ recommended)
 - npm or yarn
 
 ## Setup
@@ -16,7 +32,7 @@ Small repository with Playwright examples and exercises used for learning Playwr
 cd PlaywrightFundamentals
 npm install
 # or
-# yarn
+# yarn install
 ```
 
 ## Run tests
@@ -26,4 +42,6 @@ npx playwright test
 ```
 
 ## Notes
-- This repo contains example Playwright scripts; adjust `playwright.config.*` as needed.
+
+- Adjust or add `playwright.config.*` if you use a custom configuration.
+
