@@ -17,5 +17,5 @@ console.log(nonSuccess);
 
 // Return all unique error codes
 const errors = responses.filter(code => code < 200 || code > 299);
-const uniqueErrors = [...new Set(errors)];
+const uniqueErrors =  Array(...new Set(errors));
 console.log("Unique error codes:", uniqueErrors);

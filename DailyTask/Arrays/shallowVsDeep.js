@@ -9,9 +9,27 @@
 
 //The fix — deep copy each object:
 
+function add2(elem) {
+        return elem * 2;
+    }
+
+ function elemret(test) {
+        return test;
+    }   
+let suit = [1,2,3,4]
+
+let modSuit = suit.map(add2)
+
 let suite1 = [{ name: "login", status: "pass" }];
-let suite2 = suite1.map(test => ({ ...test }));
+let suite2 = suite1.map(elemret);
+let suite3 = suite2
+console.log(suite3[0].status); // "fail" ✓
 
 suite2[0].status = "fail";
 console.log(suite1[0].status); // "pass" ✓
 console.log(suite2[0].status); // "fail" ✓
+console.log(suite3[0].status); // "fail" ✓
+
+console.log(suit)
+
+console.log(modSuit)
